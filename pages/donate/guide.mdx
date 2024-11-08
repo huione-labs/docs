@@ -1,6 +1,8 @@
+import Image from 'next/image'
 import { Steps } from 'nextra/components'
-import { Callout } from 'nextra/components'
-import { Cards } from 'nextra/components'
+import { Tabs } from 'nextra/components'
+import { Card, Cards } from 'nextra/components';
+import { Callout } from 'nextra/components';
 
 # Donation Guide
  
@@ -8,30 +10,32 @@ By following the guidelines below, you can smoothly participate in the Xone Chai
 
 ## Process
 
+<Steps>
 ### Step 1: Acquire USDH
-
+ 
 To participate in this donation, you will need to first acquire USDH tokens. Donations can be made using USDH, which can be obtained through official channels via the Swap feature or by downloading the Huione App.
 
-- **Option 1**\
-![Option](public/images/Swap USDH.png)
-
-1. Visit [**HuioneDeFi**](https://usdh.huionedefi.com/en/swap).
-2. Exchange USDT for USDH.
-3. Supported networks: [**Ethereum**](https://ethereum.org/en/), [**Tron**](https://tron.network/), [**BNB Smart Chain**](https://www.bnbchain.org/en).
-4. Supported wallets: [**Metamask**](https://metamask.io/), [**TronLink**](https://www.tronlink.org/), [**OKX Wallet**](https://www.okx.com/).
-
-- **Option 2**\
-![Option](public/images/Huione Pay.png)
-
-Download the Huione App:\
-**Android:** [Download here >>](https://play.google.com/store/apps/details?id=com.huione.huionenew\&hl=en\&pli=1)\
-**Apple:** [Download here >>](https://apps.apple.com/us/app/%E6%B1%87%E6%97%BA/id1177980631)
+<Tabs items={['Option 1', 'Option 2']}>
+  <Tabs.Tab>
+  <Image src="/images/Swap USDH.png" alt="Hello" width={500} height={500} />
+  1. Visit [**HuioneDeFi**](https://usdh.huionedefi.com/en/swap).
+  2. Exchange USDT for USDH.
+  3. Supported networks: [**Ethereum**](https://ethereum.org/en/), [**Tron**](https://tron.network/), [**BNB Smart Chain**](https://www.bnbchain.org/en).
+  4. Supported wallets: [**Metamask**](https://metamask.io/), [**TronLink**](https://www.tronlink.org/), [**OKX Wallet**](https://www.okx.com/).
+  </Tabs.Tab>
+  <Tabs.Tab>
+  <Image src="/images/Huione Pay.png" alt="Hello" width={500} height={500} />
+  Download the Huione App:\
+  **Android:** [Download here >>](https://play.google.com/store/apps/details?id=com.huione.huionenew\&hl=en\&pli=1)\
+  **Apple:** [Download here >>](https://apps.apple.com/us/app/%E6%B1%87%E6%97%BA/id1177980631)
+  </Tabs.Tab>
+</Tabs>
 
 ### Step 2: Visit the Donation Page
 
 Once you have obtained sufficient USDH, go to the donation interaction page.
 
-![Option](public/images/Huione Donation.png)
+<Image src="/images/Huione Donation.png" alt="Hello" width={500} height={500} />
 
 ### Step 3: Fill Out the Form
 
@@ -41,22 +45,44 @@ To ensure optimal service, please complete the relevant fields in the provided d
 
 For this donation, you can pay using popular cryptocurrency wallets or through the Huione App. Select your preferred payment method to proceed with the donation.
 
-![Option](public/images/Huione Donation Payment.png)
+<Image src="/images/Huione Donation Payment.png" alt="Hello" width={500} height={500} />
 
 ### Step 5: Provide Your BSC Address
+
 After completing the donation payment, the smart contract will automatically send the designated NFT and TXOC tokens to the BSC address you provide.
 
-- **Xone Pioneer NFT**\
-Applicable to Xone Donation Global Promotion Ambassador Identity Proof Benefits.
-
-- **TXOC Token**\
-Used to exchange XOC Coin in equal proportion after the mainnet is launched.
+<Cards num={2}>
+<Cards.Card
+    title="What is Xone Pioneer NFT?"
+    href="/donate/nft"
+  >
+  </Cards.Card>
+  <Cards.Card
+    title="Why is there TXOC Token?"
+    href="/donate/xoc"
+  >
+  </Cards.Card>
+</Cards>
 
 ### Step 6: Wait for Mainnet Launch or Join the Official Community
 
 Xone TestNet is scheduled to launch in December 2024, with the Xone Mainnet anticipated in March 2025. During this period, Xone will be hosting substantial airdrop rewards for both test and mainnet phases. Join our official community to stay informed on the latest updates and announcements about Xone Chain.
 
-Note: This donation event will take place in two rounds. The TXOC tokens acquired in each round can be exchanged at a 1:1 ratio for XOC tokens once the Xone Mainnet launches.
+<Callout type="info" emoji="ℹ️">
+  **Note:**\
+  This donation event will take place in two rounds. The TXOC tokens acquired in each round can be exchanged at a 1:1 ratio for XOC tokens once the Xone Mainnet launches.
+</Callout>
+
+
+</Steps>
+
+
+
+
+
+
+
+
 
 For any help or support, please contact us:
 

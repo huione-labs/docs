@@ -7,7 +7,7 @@ export const XCards = ({ children }) => {
 }
 
 
-export const XCard = ({ href, newtab,fill, iconClass, Icon, title, desc }) => {
+export const XCard = ({ href, newtab, fill, iconClass, Icon, title, desc }) => {
     return <a href={href} target={newtab ? '_blank' : ''} className="my-2 rounded-xl border-gray-100 border hover:border-black dark:border-gray-800 dark:hover:border-white">
         <div className="py-5 px-6">
             <div className="w-[30px] h-[30px]">

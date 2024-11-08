@@ -15,10 +15,7 @@ const config: DocsThemeConfig = {
     <p>Xone Docs</p>
   </div>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
+    link: 'https://github.com/huione-labs/docs',
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
