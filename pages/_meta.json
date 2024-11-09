@@ -1,5 +1,11 @@
 {
-  "index": "Xone Chain",
+  "index": {
+    "title": "Hello",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "xone": "What is Xone?",
   "-- IDEA": {
     "type": "separator",
     "title": "IDEA"
