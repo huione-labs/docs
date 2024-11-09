@@ -17,10 +17,14 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/huione-labs/docs',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+
+  docsRepositoryBase: 'https://github.com/huione-labs/docs',
+
   footer: {
     text: '© 2024 Xone.',
   },
 }
+
+
 
 export default config
