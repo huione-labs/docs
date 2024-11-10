@@ -30,7 +30,11 @@ const config: DocsThemeConfig = {
 
 
   docsRepositoryBase: 'https://github.com/huione-labs/docs',
-
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s | Xone Docs",
+    };
+  },
   footer: {
     text: '© 2024 Xone.',
   },

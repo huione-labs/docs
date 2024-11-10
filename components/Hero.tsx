@@ -1,10 +1,11 @@
 export default function Hero() {
   return (
-    <div className="bg-white">
+    <div className="bg-transparent"> {/* 设置背景透明 */}
       <div className="relative isolate px-6 pt-16 pb-20 lg:px-8">
+        {/* 顶部模糊背景效果 */}
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl "
+          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl"
         >
           <div
             style={{
@@ -14,9 +15,9 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-full py-20 ">
+        <div className="mx-auto max-w-full py-20">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-3 py-1 text-sm dark:text-white leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20" >
               Make all efforts worthwhile.{" "}
               <a href="/nodes" className="font-semibold text-tahiti">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -25,10 +26,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center mt-16">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
               Let’s Embrace The Future Together!
             </h1>
-            <p className="mt-12 text-lg leading-8 text-gray-600">
+            <p className="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
               The decentralized Layer-1 blockchain platform based on the Ethereum protocol uses leading behavioral value incentives (BVI) to ensure that every interaction of every user participating in Xone will create value, and every contribution will be rewarded.
             </p>
             <div className="mt-16 flex items-center justify-center gap-x-6">
@@ -40,13 +41,14 @@ export default function Hero() {
               </a>
               <a
                 href="/account"
-                className="text-sm font-semibold leading-6 text-tahiti"
+                className="text-sm font-semibold leading-6 text-tahiti dark:text-white"
               >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
         </div>
+        {/* 底部模糊背景效果 */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
