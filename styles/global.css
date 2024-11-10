@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.select2-dropdown {
+  @apply rounded-b-lg shadow-md;
+}
+
+.select2-search {
+  @apply border border-gray-300 rounded;
+}
+
+.select2-results__group {
+  @apply text-lg font-bold text-gray-900;
+}
+
+/* ... */
+
+@tailwind utilities;

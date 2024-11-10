@@ -1,8 +1,9 @@
+
+
 export default function Hero() {
   return (
-    <div className="bg-transparent"> {/* 设置背景透明 */}
+    <div className="bg-transparent">
       <div className="relative isolate px-6 pt-16 pb-20 lg:px-8">
-        {/* 顶部模糊背景效果 */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl"
@@ -48,7 +49,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        {/* 底部模糊背景效果 */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
