@@ -1,3 +1,5 @@
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
+
 # Xone Chain
 
 ![banner](public/images/Thumb.png)
@@ -7,33 +9,107 @@
 **Xone Chain** is a decentralized Layer-1 blockchain platform based on the Ethereum protocol and is also the leading **Behavioral Value Incentive blockchain (BVI)**. On Xone Chain, every interaction creates value, and every contribution is rewarded. Through its unique **BVI system**, users' behaviors and contributions are accumulated in real-time and converted into rewards. Xone Chain provides high-performance blockchain solutions with features such as fast transaction speed, low cost, strong privacy protection, and decentralized governance, making it a vibrant, innovative, and thriving ecosystem.
 
 ## What Can Xone Do?
-
-- **Financial Services for Everyone:**\
-Xone brings financial services to everyone, regardless of location or identity. Users only need an internet connection to access financial tools built on Ethereum, such as lending and savings, opening the door to financial freedom.
-
-- **Truly Open Internet:**\
-Xone provides a completely open network where anyone can interact, build, or innovate. Users can control their own assets, identity, and data without relying on a few large corporations.
-
-- **Peer-to-Peer Direct Interaction:**\
-Xone allows you to connect directly with others, reach agreements, and transfer assets without intermediaries. This peer-to-peer model provides users with greater autonomy and privacy.
-
-- **Censorship Resistance:**\
-Xone's decentralized architecture protects users' freedom. No government or company can block or control user access, ensuring all users can freely receive payments and use services on Xone.
-
-- **Business Transaction Security:**\
-Xone provides built-in transaction security guarantees. Funds only transfer when all agreed conditions are met, providing users and developers with peace of mind during transactions.
-
-- **Application Interoperability:**\
-All applications on Xone run in a shared ecosystem and global state, meaning they can seamlessly collaborate. This interoperability brings better user experience and ensures all tools cannot be easily removed or disabled.
-
-- **Behavioral Incentive Mechanism:**\
-Every action on Xone generates value. The platform's unique Behavioral Value Incentive system (BVI) converts user interactions into rewards, creating a more dynamic and rewarding ecosystem.
-
-- **Transparent Governance Model:**\
-Xone's community-driven governance model enables users to participate in the platform's evolution. Token holders can participate in voting, jointly deciding the platform's direction, making Xone a user-led ecosystem.
-
-- **Low-Cost High-Efficiency Transactions:**\
-Xone focuses on efficiency, maximizing transaction speed and reducing transaction costs. Its architecture supports fast transaction processing and low fees, making it easy and sustainable for global users to participate.
+<div class="mt-2 md:mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-carbon-finance stroke-2" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Financial Services for Everyone**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone brings financial services to everyone, regardless of location or identity. Users only need an internet connection to access financial tools built on Ethereum, such as lending and savings, opening the door to financial freedom.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-gis-openls" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Truly Open Internet**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone provides a completely open network where anyone can interact, build, or innovate. Users can control their own assets, identity, and data without relying on a few large corporations.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-ri-p2p-line" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Peer-to-Peer Direct Interaction**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone allows you to connect directly with others, reach agreements, and transfer assets without intermediaries. This peer-to-peer model provides users with greater autonomy and privacy.</p>
+    </CardBody>
+  </Card>  
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-material-symbols-fact-check-outline" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Censorship Resistance**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone's decentralized architecture protects users' freedom. No government or company can block or control user access, ensuring all users can freely receive payments and use services on Xone.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-hugeicons-security-check" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Business Transaction Security**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone provides built-in transaction security guarantees. Funds only transfer when all agreed conditions are met, providing users and developers with peace of mind during transactions.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-carbon-migrate" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Application Interoperability**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>All applications on Xone run in a shared ecosystem and global state, meaning they can seamlessly collaborate. This interoperability brings better user experience and ensures all tools cannot be easily removed or disabled.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-fluent-reward-24-regular" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Behavioral Incentive Mechanism**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Every action on Xone generates value. The platform's unique Behavioral Value Incentive system (BVI) converts user interactions into rewards, creating a more dynamic and rewarding ecosystem.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-fluent-layer-diagonal-person-24-regular" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Transparent Governance Model**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone's community-driven governance model enables users to participate in the platform's evolution. Token holders can participate in voting, jointly deciding the platform's direction, making Xone a user-led ecosystem.</p>
+    </CardBody>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <div className="i-uil-transaction" role="img" aria-hidden="true" />
+      <div className="flex flex-col">
+        <p className="text-md">**Low-Cost High-Efficiency Transactions**</p>
+      </div>
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+      <p>Xone focuses on efficiency, maximizing transaction speed and reducing transaction costs. Its architecture supports fast transaction processing and low fees, making it easy and sustainable for global users to participate.</p>
+    </CardBody>
+  </Card>
+</div>
 
 ## Why Should I Use Xone?
 

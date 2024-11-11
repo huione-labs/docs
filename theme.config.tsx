@@ -1,6 +1,5 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import { TwitterX } from './components/icons/index'
 
 const config: DocsThemeConfig = {
   logo: <div style={{

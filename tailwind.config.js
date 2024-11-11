@@ -1,13 +1,19 @@
-/** @type {import('tailwindcss').Config} */
+const { nextui } = require("@nextui-org/react");
+const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons")
+
+/***  @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: {
     relative: true,
     files: [
-      "./app/**/*.{js,ts,jsx,tsx,mdx,md}",
-      "./pages/**/*.{js,ts,jsx,tsx,mdx,md}",
-      "./components/**/*.{js,ts,jsx,tsx,mdx,md}",
+      "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx,html}",
+      "./app/**/*.{js,ts,jsx,tsx,mdx,md,html}",
+      "./pages/**/*.{js,ts,jsx,tsx,mdx,md,html}",
+      "./components/**/*.{js,ts,jsx,tsx,mdx,md,html}",
 
-      "./src/**/*.{js,ts,jsx,tsx,mdx,md}",
+      "./src/**/*.{js,ts,jsx,tsx,mdx,md,html}",
     ],
   },
 
@@ -25,6 +31,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    nextui(),
+    iconsPlugin({
+      collections: getIconCollections(["lucide", "carbon", "gis", "ri", "material-symbols", "hugeicons", "fluent", "uil"]),
+    }
+    ),
+  ],
 }
 
