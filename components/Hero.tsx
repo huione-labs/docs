@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm dark:text-white leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20" >
               Make all efforts worthwhile.{" "}
-              <a href="/nodes" className="font-semibold text-primary">
+              <a href="/nodes" className="font-semibold text-primaryHue">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -36,13 +36,13 @@ export default function Hero() {
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <a
                 href="/xone"
-                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-grd-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="rounded-md bg-primaryHue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-grd-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Start Learning
               </a>
               <a
                 href="/account"
-                className="text-sm font-semibold leading-6 text-primary dark:text-white"
+                className="text-sm font-semibold leading-6 text-primaryHue dark:text-white"
               >
                 Learn More <span aria-hidden="true">→</span>
               </a>

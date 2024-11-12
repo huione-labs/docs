@@ -3,6 +3,8 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
+const primaryHue = 0
+
 const config: DocsThemeConfig = {
   logo: <div style={{
     display: 'flex',
@@ -55,6 +57,8 @@ const config: DocsThemeConfig = {
 
   docsRepositoryBase: 'https://github.com/huione-labs/docs',
 
+  primaryHue,
+
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
@@ -85,6 +89,9 @@ const config: DocsThemeConfig = {
 
   footer: {
     text: '© 2024 Xone.',
+  },
+  toc: {
+    title: 'Table of contents'
   },
 
 }

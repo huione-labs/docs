@@ -1,4 +1,10 @@
 {
+  "contact": {
+    "title": "Dynamic 🎉",
+    "type": "page",
+    "href": "https://lu.ma/xone",
+    "newWindow": true
+  },
   "index": {
     "title": "Hello",
     "theme": {
