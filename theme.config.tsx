@@ -1,5 +1,7 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <div style={{
@@ -52,11 +54,35 @@ const config: DocsThemeConfig = {
   },
 
   docsRepositoryBase: 'https://github.com/huione-labs/docs',
+
   useNextSeoProps() {
-    return {
-      titleTemplate: "%s | Xone Docs",
-    };
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s | Xone Docs'
+      }
+    }
   },
+
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { frontMatter } = useConfig()
+    const url =
+      'https://xone.plus' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+
+    return (
+      <>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={frontMatter.title || 'Xone Docs'} />
+        <meta
+          property="og:description"
+          content={frontMatter.description || 'The decentralized Layer-1 blockchain platform based on the Ethereum protocol uses leading behavioral value incentives (BVI) to ensure that every interaction of every user participating in Xone will create value, and every contribution will be rewarded.'}
+        />
+      </>
+    )
+  },
+
   footer: {
     text: '© 2024 Xone.',
   },
