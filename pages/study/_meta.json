@@ -1,0 +1,22 @@
+{
+  "xone": "What is Xone?",
+  "-- IDEA": {
+    "type": "separator",
+    "title": "IDEA"
+  },
+  "account": "Xone Account",
+  "gas": "Gas Fees",
+  "nodes": "Nodes",
+  "xoc": "XOC",
+  "-- ACTIVE": {
+    "type": "separator",
+    "title": "ACTIVE"
+  },
+  "donate": "Xone Donate",
+  "-- TERMS & CONDITIONS": {
+    "type": "separator",
+    "title": "TERMS & CONDITIONS"
+  },
+  "privacy": "Privacy Policy",
+  "service": "Service Agreement"
+}

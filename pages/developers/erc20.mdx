@@ -1,0 +1,83 @@
+# Deploying an ERC-20 Token Using Remix and OpenZeppelin
+
+This guide walks you through deploying an ERC-20 token using **Remix**, an online Solidity IDE, and **OpenZeppelin**, a library of secure and reusable smart contract templates. 
+
+## Prerequisites
+
+### Prepare the Environment
+1. Open the [Remix IDE](https://remix.ethereum.org).
+2. Install the [MetaMask](https://metamask.io/) extension and configure it to connect to the Xone testnet.
+3. Fund your MetaMask wallet with TXOC from a [faucet]().
+
+### Step 1: Create the ERC-20 Contract
+
+1. In Remix, create a new file in the `contracts` folder and name it `test.sol`.
+
+2. Add the following code to `test.sol`:
+``` js copy
+// SPDX-License-Identifier: MIT
+// Compatible with OpenZeppelin Contracts ^5.0.0
+pragma solidity ^0.8.22;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
+
+contract Test is ERC20, ERC20Permit {
+    constructor() ERC20("test", "TEST") ERC20Permit("test") {
+        _mint(msg.sender, 10000 * 10 ** decimals());
+    }
+}
+
+```
+
+   ![Create a new file in Remix](public/images/erc20_0.png)
+
+## Step 2: Compile the Contract
+
+1. Click on the "Solidity Compiler" tab on the left sidebar.
+
+2. Select the appropriate compiler version (0.8.x).
+
+3. Click on "Advanced Configurations" to expand the advanced settings.
+
+4. Choose EVM Version "paris".
+
+5. Enable optimization (default 200)
+
+6. Click "Compile test.sol".
+
+   ![erc20](public/images/erc20_1.png)
+
+## Step 3: Deploy the Contract
+
+1. Click on the "Deploy & Run Transactions" tab on the left sidebar.
+
+2. Set the environment to "Injected Web3" if you are using MetaMask, or "JavaScript VM" for a simulated environment.
+
+3. Click "Deploy".
+
+   ![erc20](public/images/erc20_2.png)
+
+## Step 4: Expand the Deployed Contract
+
+1. In the "Deployed Contracts" section, find the contract you just deployed.
+
+2. Click on the contract name to expand it. This will show you a list of available functions and variables that you can interact with.
+
+3. Check smart contract address (e.g., 0x1F8ceB80df8b831e73aa8A15E2DcE229c214B82C).
+
+   ![erc20](public/images/erc20_3.png)
+
+## Step 5: Add the Token to MetaMask
+
+1. Open MetaMask and click Import Tokens.
+
+2. Paste the contract address (in this case: 0x1F8ceB80df8b831e73aa8A15E2DcE229c214B82C) of your deployed token.
+
+3. MetaMask will auto-detect the token symbol and decimals. Click Add Custom Token.
+
+   ![erc20](public/images/erc20_4.png)
+
+4. Check your token balance.
+
+    ![erc20](public/images/erc20_5.png)

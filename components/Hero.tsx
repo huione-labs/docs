@@ -1,4 +1,4 @@
-
+import YouTube from '@components/YouTube'
 
 export default function Hero() {
   return (
@@ -16,32 +16,44 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ed0000] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-full py-20">
+        <div className="mx-auto max-w-full">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm dark:text-white leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20" >
               Make all efforts worthwhile.{" "}
-              <a href="/nodes" className="font-semibold text-primaryHue">
+              <a href="/study/nodes" className="font-semibold text-primaryHue">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center mt-16">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl bottom-4">
               Let’s Embrace The Future Together!
             </h1>
+            <div className="flex justify-center my-5" style={{ marginTop: "20px", marginBottom: "20px" }}>
+              <iframe
+                width="854"
+                height="480"
+                src="https://www.youtube.com/embed/q-9wP6evODY"
+                title="Hello Xone"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
             <p className="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
               The decentralized Layer-1 blockchain platform based on the Ethereum protocol uses leading behavioral value incentives (BVI) to ensure that every interaction of every user participating in Xone will create value, and every contribution will be rewarded.
             </p>
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <a
-                href="/xone"
+                href="/study/xone"
                 className="rounded-md bg-primaryHue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-grd-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Start Learning
               </a>
               <a
-                href="/account"
+                href="/study/account"
                 className="text-sm font-semibold leading-6 text-primaryHue dark:text-white"
               >
                 Learn More <span aria-hidden="true">→</span>

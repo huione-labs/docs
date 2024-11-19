@@ -1,34 +1,23 @@
 {
+  "index": {
+    "title": "Hello",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "study": {
+    "title": "Study 📖",
+    "type": "page"
+  },
+  "developers": {
+    "title": "Developers ↗",
+    "type": "page"
+  },
   "contact": {
     "title": "Dynamic 🎉",
     "type": "page",
     "href": "https://lu.ma/xone",
     "newWindow": true
-  },
-  "index": {
-    "title": "Hello",
-    "theme": {
-      "layout": "full"
-    }
-  },
-  "xone": "What is Xone?",
-  "-- IDEA": {
-    "type": "separator",
-    "title": "IDEA"
-  },
-  "account": "Xone Account",
-  "gas": "Gas Fees",
-  "nodes": "Nodes",
-  "xoc": "XOC",
-  "-- ACTIVE": {
-    "type": "separator",
-    "title": "ACTIVE"
-  },
-  "donate": "Xone Donate",
-  "-- TERMS & CONDITIONS": {
-    "type": "separator",
-    "title": "TERMS & CONDITIONS"
-  },
-  "privacy": "Privacy Policy",
-  "service": "Service Agreement"
+  }
 }
