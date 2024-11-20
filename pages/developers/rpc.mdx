@@ -1,19 +1,45 @@
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+
 # RPC Endpoints
 
-This document provides the necessary details to connect to the Xone Testnet, including network configuration, RPC endpoints, and block explorer information.
+This document provides the necessary details to connect to the Xone Testnet or Xone Mainnet, including network configuration, RPC endpoints, and block explorer information.
 
-## **Testnet Configuration**
+## Network Details
 
-### **Network Details**
-- **Network Name:** Xone TestNet  
-- **New RPC URL:** [https://rpc.xonetest.plus/](https://rpc.xonetest.plus/)  
-- **Chain ID:** 33772211  
-- **Symbol:** TXOC  
-- **Block Explorer URL:** [https://testnet.xscscan.com/](https://testnet.xscscan.com/)  
+<div className="overflow-x-auto">
+<Table removeWrapper aria-label="Example static collection table" className="mt-2">
+  <TableHeader>
+    <TableColumn></TableColumn>
+    <TableColumn>**Xone Testnet**</TableColumn>
+  </TableHeader>
+  <TableBody>
+    <TableRow key="1">
+      <TableCell>**Network Name**</TableCell>
+      <TableCell>Xone TestNet</TableCell>
+    </TableRow>
+    <TableRow key="2">
+      <TableCell>**New RPC URL**</TableCell>
+      <TableCell>https://rpc.xonetest.plus/</TableCell>
+    </TableRow>
+    <TableRow key="3">
+      <TableCell>**Chain ID**</TableCell>
+      <TableCell>33772211</TableCell>
+    </TableRow>
+    <TableRow key="4">
+      <TableCell>**Symbol**</TableCell>
+      <TableCell>TXOC</TableCell>
+    </TableRow>
+        <TableRow key="5">
+      <TableCell>**Block Explorer URL**</TableCell>
+      <TableCell>https://testnet.xscscan.com/</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+</div>
 
-### **How to Connect to Xone Testnet**
+## How to Connect to Xone
 
-#### **For MetaMask**
+### **For MetaMask**
 1. Open MetaMask and click on your profile icon.
 2. Navigate to **Settings** > **Networks** > **Add Network**.
 3. Enter the following details:

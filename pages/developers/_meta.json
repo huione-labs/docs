@@ -1,17 +1,16 @@
 {
   "ready": "Ready Build",
-  "-- Network": {
+  "-- Xone Chian": {
     "type": "separator",
-    "title": "Network"
+    "title": "Xone Chain"
   },
-  "rpc": "RPC endpoints",
+  "rpc": "RPC Endpoints",
   "testnet": "Testnet",
-  "mainnet": "Mainnet",
+  "explorers": "Block Explorers",
   "-- Build": {
     "type": "separator",
     "title": "Build"
   },
   "tools": "DevTools",
-  "erc20": "ERC-20",
-  "explorers": "Block Explorers"
+  "erc20": "ERC-20"
 }

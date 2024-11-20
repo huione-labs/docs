@@ -1,25 +1,177 @@
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} from "@nextui-org/react";
+
 # DevTools
 
 DevTools allow you to build dApp applications on the **Xone Chain** more quickly and efficiently. They are useful for debugging, testing, and developing. This section outlines various in-house and third-party tools that are essential for developers working with Xone Chain products and services. These tools enable developers to access data, interact with blockchain networks, utilize oracles, and more.
 
 
-## **Tools**
+## Tools
 
-### **1. Developer Essentials**
-- **[TXOC Faucet]():** Get free test tokens to interact with the Xone Chain testnet.
-- **[OpenZeppelin](https://www.openzeppelin.com/):** A library for secure and standard smart contracts.
+### Development Essentials
+<div class="columns-2 mt-2">
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="/favicon.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Xone Faucet</h3>
+    <p>Obtain free test tokens to interact with the Xone Chain test network.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isDisabled
+        showAnchorIcon
+        href="https://www.openzeppelin.com/"
+        className='text-primaryHue'
+      >
+        Under Construction
+      </Link>
+    </CardFooter>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://www.openzeppelin.com/hubfs/openzeppelin-favicon-1.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">OpenZeppelin</h3>
+    <p>A library for secure and standard smart contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://www.openzeppelin.com/"
+        className='text-primaryHue'
+      >
+        Open OpenZeppelin
+      </Link>
+    </CardFooter>
+  </Card>
+</div>
+
+### Development Frameworks
+<div class="columns-2 mt-2">
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://hardhat.org/favicon.ico" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Hardhat</h3>
+    <p>A development environment for compiling, deploying, and testing smart contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://hardhat.org/"
+        className='text-primaryHue'
+      >
+        Open Hardhat
+      </Link>
+    </CardFooter>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://remix.ethereum.org/assets/img/remix-logo-blue.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Remix</h3>
+    <p>An online IDE for developing Solidity smart contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://remix.ethereum.org/"
+        className='text-primaryHue'
+      >
+        Open Remix
+      </Link>
+    </CardFooter>
+  </Card>
+</div>
 
 
-### **2. Development Frameworks**
-- **[Hardhat](https://hardhat.org):** A development environment for compiling, deploying, and testing smart contracts.
-- **[Remix](https://remix.ethereum.org/):** An online IDE for Solidity smart contract development.
+### Code Collaboration Platforms
+<div class="columns-2 mt-2">
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://cdn.replit.com/dotcom/favicon-196.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Replit</h3>
+    <p>An online IDE for collaborative coding and rapid testing.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://replit.com/"
+        className='text-primaryHue'
+      >
+        Open Replit
+      </Link>
+    </CardFooter>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://trufflesuite.com/assets/favicon-32x32.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Truffle</h3>
+    <p>A suite of development tools for Ethereum smart contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://trufflesuite.com/"
+        className='text-primaryHue'
+      >
+        Open Truffle
+      </Link>
+    </CardFooter>
+  </Card>
+</div>
 
-
-### **3. Code and Collaboration Platforms**
-- **[Replit](https://replit.com):** An online IDE for collaborative coding and quick testing.
-- **[Truffle](https://trufflesuite.com):** A suite of development tools for Ethereum smart contracts.
-
-
-### **4. Blockchain Simulators and Languages**
-- **[Ganache](https://trufflesuite.com/ganache):** A personal blockchain for testing Ethereum contracts.
-- **[Solidity](https://soliditylang.org):** The main programming language for writing Ethereum smart contracts.
+### Blockchain Simulators and Language
+<div class="columns-2 mt-2">
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://trufflesuite.com/assets/favicon-32x32.png" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Ganache</h3>
+    <p>A personal blockchain for testing Ethereum contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://trufflesuite.com/ganache"
+        className='text-primaryHue'
+      >
+        Open Ganache
+      </Link>
+    </CardFooter>
+  </Card>
+  <Card className="flex-shrink-0 max-w-full flex-col">
+    <CardHeader className="flex top-6 gap-2">
+      <Image className="w-8 h-8" src="https://soliditylang.org/assets/favicon.ico" alt="Xone Logo"layout="responsive" />
+    </CardHeader>
+    <CardBody className="px-3 pt-0 pb-3 text-small">
+    <h3 className="font-bold text-large pb-2">Solidity</h3>
+    <p>The primary programming language for writing Ethereum smart contracts.</p>
+    </CardBody>
+    <CardFooter>
+      <Link
+        isExternal
+        showAnchorIcon
+        href="https://soliditylang.org/"
+        className='text-primaryHue'
+      >
+        Open Solidity
+      </Link>
+    </CardFooter>
+  </Card>
+</div>
