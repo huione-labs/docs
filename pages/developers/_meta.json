@@ -7,10 +7,12 @@
   "rpc": "RPC Endpoints",
   "testnet": "Testnet",
   "explorers": "Block Explorers",
+  "faucets": "Faucets",
   "-- Build": {
     "type": "separator",
     "title": "Build"
   },
   "tools": "DevTools",
-  "erc20": "ERC-20"
+  "erc20": "ERC-20: Fungible Tokens",
+  "erc721": "ERC-721: NFT"
 }

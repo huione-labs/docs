@@ -6,7 +6,33 @@ import YouTube from '@components/YouTube'
 
 # Swap USDH
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/xl0Qo2BSioE" title="USDH Swap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div className="flex justify-center my-5" style={{ marginTop: "20px", marginBottom: "20px" }}>
+  <div     
+    style={{
+      position: "relative",
+      width: "100%",
+      maxWidth: "854px", // 限制桌面上的最大宽度
+      paddingBottom: "56.25%", // 16:9 比例
+      height: 0,
+    }}>
+    <iframe 
+      src="https://www.youtube.com/embed/xl0Qo2BSioE" 
+      title="USDH Swap" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+      style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+    }}
+      >
+    </iframe>
+  </div>
+</div>
 
 <Callout type="warning" emoji="⚠️">
   This operation demonstration video does not constitute any investment advice!

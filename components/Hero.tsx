@@ -31,16 +31,31 @@ export default function Hero() {
               Let’s Embrace The Future Together!
             </h1>
             <div className="flex justify-center my-5" style={{ marginTop: "20px", marginBottom: "20px" }}>
-              <iframe
-                width="854"
-                height="480"
-                src="https://www.youtube.com/embed/q-9wP6evODY"
-                title="Hello Xone"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  maxWidth: "90vw",
+                  paddingBottom: "56.25%",
+                  height: 0,
+                }}
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/q-9wP6evODY"
+                  title="Hello Xone"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </div>
             </div>
             <p className="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
               The decentralized Layer-1 blockchain platform based on the Ethereum protocol uses leading behavioral value incentives (BVI) to ensure that every interaction of every user participating in Xone will create value, and every contribution will be rewarded.

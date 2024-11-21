@@ -1,0 +1,27 @@
+import { Callout } from 'nextra/components'
+import { Link } from "@nextui-org/react";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+
+# Testnet Faucets
+
+Faucets are developers tools that allow you to get free XOC (and other tokens) on test networks like Xone and Xone so that you can send transactions and create smart contracts. Here you'll find a list of active faucets that you can try out. Different faucets use different authentication methods, so you may have to try a few before you find one that works for you. Faucets can occasionally also run out of XOC, so if you're having trouble getting XOC from a faucet, try another one.
+
+<Callout type="warning" emoji="⚠️">
+  Tokens on test networks like Xone have no value and are only meant for testing.
+</Callout>
+
+## Xone Faucets
+
+<Link className='text-primaryHue' isExternal showAnchorIcon href="https://faucet.xone.plus/">Xone Faucet</Link> is a development tool jointly built by Xone developers, allowing developers and users to obtain testnet XOC for free, in order to facilitate testing applications on Xone Testnet. If you are looking for XOC on Xone Testnet, Xone Faucets is a good choice.
+
+![Faucets](public/images/Faucet.png)
+
+## Additional List
+
+  <Table className="mt-2" removeWrapper aria-label="Example empty table">
+    <TableHeader>
+      <TableColumn>Faucet Name</TableColumn>
+      <TableColumn>Supported Networks</TableColumn>
+    </TableHeader>
+    <TableBody emptyContent={"Under Construction"}>{[]}</TableBody>
+  </Table>

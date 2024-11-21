@@ -11,8 +11,14 @@
     "type": "page"
   },
   "developers": {
-    "title": "Developers ↗",
+    "title": "Developers 🔧",
     "type": "page"
+  },
+  "faucet": {
+    "title": "Faucet ⛽️",
+    "type": "page",
+    "href": "https://faucet.xone.plus/",
+    "newWindow": true
   },
   "contact": {
     "title": "Dynamic 🎉",
