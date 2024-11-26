@@ -1,0 +1,38 @@
+"documentation 📖":
+  - README.md
+  - docs/**/*
+
+"tooling 🔧":
+  - .github/**/*
+  - src/scripts/**/*
+  - src/lib/**/*
+  - src/hooks/**/*
+  - .storybook/**/*
+
+"dependencies 📦":
+  - package.json
+  - yarn.lock
+
+"config ⚙️":
+  - i18n.config.json
+  - next.config.js
+  - next-i18next.config,js
+  - next-sitemap.config.js
+  - tsconfig.json
+  - .nvmrc
+  - .eslintignore
+  - .eslintrc.json
+  - .prettierignore
+  - .prettierrc
+  - netlify.toml
+
+"translation 🌍":
+  - public/content/translations/**/*
+  - src/intl/**/*
+
+"content 🖋️":
+  - src/intl/en/**
+  - public/content/**/*
+
+"event 📅":
+  - src/data/community-events.json
