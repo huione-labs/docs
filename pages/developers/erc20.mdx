@@ -1,5 +1,6 @@
-import { Steps } from 'nextra/components';
+import { Steps, Callout } from 'nextra/components';
 import { Link } from "@nextui-org/react";
+import Image from 'next/image';
 
 # Deploying an ERC-20 Token Using Remix and OpenZeppelin
 
@@ -9,16 +10,17 @@ This guide walks you through deploying an ERC-20 token using **Remix**, an onlin
 
 1. Open the <Link className='text-primaryHue' isExternal showAnchorIcon href="https://remix.ethereum.org">Remix IDE</Link>.
 2. Install the <Link className='text-primaryHue' isExternal showAnchorIcon href="https://metamask.io/">MetaMask</Link> extension and configure it to connect to the Xone testnet.
-3. Fund your MetaMask wallet with TXOC from a <Link className='text-primaryHue' isExternal showAnchorIcon href="https://faucet.xone.plus">Faucet</Link>.
+3. Fund your MetaMask wallet with Test XOC from a <Link className='text-primaryHue' isExternal showAnchorIcon href="https://faucet.xone.plus">Faucet</Link>.
 
 ## Let’s get started
 
 <Steps>
 ### Step 1: Create the ERC-20 Contract
 
-1. In Remix, create a new file in the `contracts` folder and name it `test.sol`.
+1. In Remix, create a new file in the `contracts` folder and name it `example.sol`.
 
-2. Add the following code to `test.sol`:
+2. Add the following code to `example.sol`:
+
 ``` js showLineNumbers copy filename="example.sol"
 // SPDX-License-Identifier: MIT
 // Compatible with OpenZeppelin Contracts ^5.0.0
@@ -28,14 +30,25 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 contract Test is ERC20, ERC20Permit {
-    constructor() ERC20("test", "TEST") ERC20Permit("test") {
+    constructor() ERC20("example", "EXAMPLE") ERC20Permit("example") {
         _mint(msg.sender, 10000 * 10 ** decimals());
     }
 }
 
 ```
+<Image src="/images/Create ERC-20.png" alt="Create ERC-20" width={1200} height={800} layout="responsive" />
 
-   ![Create a new file in Remix](public/images/erc20_0.png)
+<Callout type="info" emoji="ℹ️">
+   Change the parameters in the constructor to customize the token:
+
+   **name:** The name of your token. `example`
+
+   **symbol:** The symbol of your token. `EXAMPLE`
+
+   **initialSupply:** The initial supply of your token 10000(in whole units, it will be multiplied by 10^decimals() within the contract).
+
+   In this example, the token name is "example", the symbol is "EXAMPLE", and the initial supply is 10,000 tokens.
+</Callout>
 
 ### Step 2: Compile the Contract
 
@@ -49,19 +62,19 @@ contract Test is ERC20, ERC20Permit {
 
 5. Enable optimization (default 200)
 
-6. Click 【**Compile**】.
+6. Click 【**Compile example.sol**】.
 
-   ![erc20](public/images/erc20_1.png)
+<Image src="/images/Create ERC-20_1.png" alt="Create ERC-20_1" width={1200} height={800} layout="responsive" />
 
 ### Step 3: Deploy the Contract
 
 1. Click on the 【**Deploy & Run Transactions**】 tab on the left sidebar.
 
-2. Set the environment to **Injected Web3** if you are using MetaMask, or **JavaScript VM** for a simulated environment.
+2. Set the environment to **Injected Provider - MetaMask** if you are using MetaMask, or **JavaScript VM** for a simulated environment.
 
 3. Click 【**Deploy**】.
 
-   ![erc20](public/images/erc20_2.png)
+<Image src="/images/Create ERC-20_2.png" alt="Create ERC-20_2" width={1200} height={800} layout="responsive" />
 
 ### Step 4: Expand the Deployed Contract
 
@@ -69,21 +82,22 @@ contract Test is ERC20, ERC20Permit {
 
 2. Click on the contract name to expand it. This will show you a list of available functions and variables that you can interact with.
 
-3. Check smart contract address (e.g.: <Link className='text-primaryHue' isExternal showAnchorIcon href="https://testnet.xscscan.com/token/0x1F8ceB80df8b831e73aa8A15E2DcE229c214B82C">0x1F8ceB80df8b831e73aa8A15E2DcE229c214B82C</Link>).
+3. Check smart contract address (e.g.: <Link className='text-primaryHue' isExternal showAnchorIcon href="https://testnet.xscscan.com/token/0xb1a04485443d937e8eEbd260AE954BC3C006422F">0xb1a04485443d937e8eEbd260AE954BC3C006422F</Link>).
 
-   ![erc20](public/images/erc20_3.png)
+<Image src="/images/Create ERC-20_3.png" alt="Create ERC-20_3" width={1200} height={800} layout="responsive" />
 
 ### Step 5: Add the Token to MetaMask
 
 1. Open MetaMask and click Import Tokens.
 
-2. Paste the contract address (in this case `0x1F8ceB80df8b831e73aa8A15E2DcE229c214B82C`) of your deployed token.
+2. Paste the contract address (in this case `0xb1a04485443d937e8eEbd260AE954BC3C006422F`) of your deployed token.
 
 3. MetaMask will auto-detect the token symbol and decimals. Click 【**Add Custom Token**】.
 
-   ![erc20](public/images/erc20_4.png)
-
 4. Check your token balance.
 
-    ![erc20](public/images/erc20_5.png)
+<Image src="/images/Create ERC-20_4.png" alt="Create ERC-20_4" width={1200} height={800} layout="responsive" />
+
+### Step 6: Congratulations! You have completed the ERC-20 contract creation.
+
 </Steps>
