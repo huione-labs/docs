@@ -1,4 +1,5 @@
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+import Image from 'next/image';
 
 # RPC Endpoints
 
@@ -19,7 +20,7 @@ This document provides the necessary details to connect to the Xone Testnet or X
     </TableRow>
     <TableRow key="2">
       <TableCell>**New RPC URL**</TableCell>
-      <TableCell>https://rpc.xonetest.plus/</TableCell>
+      <TableCell>`https://rpc-testnet.xone.plus/`</TableCell>
     </TableRow>
     <TableRow key="3">
       <TableCell>**Chain ID**</TableCell>
@@ -27,11 +28,11 @@ This document provides the necessary details to connect to the Xone Testnet or X
     </TableRow>
     <TableRow key="4">
       <TableCell>**Symbol**</TableCell>
-      <TableCell>TXOC</TableCell>
+      <TableCell>XOC</TableCell>
     </TableRow>
         <TableRow key="5">
       <TableCell>**Block Explorer URL**</TableCell>
-      <TableCell>https://testnet.xscscan.com/</TableCell>
+      <TableCell>`https://testnet.xscscan.com/`</TableCell>
     </TableRow>
   </TableBody>
 </Table>
@@ -44,22 +45,9 @@ This document provides the necessary details to connect to the Xone Testnet or X
 2. Navigate to **Settings** > **Networks** > **Add Network**.
 3. Enter the following details:
 
-![add testnet to metamask](public/images/metamask_testrpc.png)
+<Image src="/images/MetaMask Add Network.png" alt="MetaMask Add Network" width={1200} height={800} layout="responsive" />
 
 4. Save the network and start interacting with the Xone TestNet.
 
-#### **For Developers**
-Use the **New RPC URL** (https://rpc.xonetest.plus/) in your application’s configurations to connect to the Xone Testnet. The RPC endpoint supports all standard Ethereum JSON-RPC methods.
-
-### **Block Explorer**
-The block explorer for Xone Testnet is available at [https://testnet.xscscan.com/](https://testnet.xscscan.com/).  
-You can use it to:
-- View transactions.
-- Check account balances.
-- Explore smart contracts.
-- Monitor network activity.
-
-## **Additional Notes**
-- Test tokens (TXOC) can be used on the testnet for development and testing purposes.
-- For further assistance or documentation, visit the official [Xone Chain Testnet Documentation](#).
-
+### **For Developers**
+Use the **New RPC URL** `https://rpc-testnet.xone.plus/` in your application’s configurations to connect to the Xone Testnet. The RPC endpoint supports all standard Ethereum JSON-RPC methods.
