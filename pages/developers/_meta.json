@@ -8,11 +8,10 @@
   "testnet": "Testnet",
   "explorers": "Block Explorers",
   "faucets": "Faucets",
-  "-- Build": {
+  "-- DEVELOPERS": {
     "type": "separator",
-    "title": "Build"
+    "title": "Developers"
   },
   "tools": "DevTools",
-  "erc20": "ERC-20: Fungible Tokens",
-  "erc721": "ERC-721: NFT"
+  "standard": "Standard"
 }
