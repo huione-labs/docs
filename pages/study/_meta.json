@@ -5,9 +5,13 @@
     "title": "IDEA"
   },
   "account": "Xone Account",
+  "xoc": "XOC",
   "gas": "Gas Fees",
   "nodes": "Nodes",
-  "xoc": "XOC",
+  "modules": "Modules",
+  "block":"Block",
+  "transaction":"Transaction",
+
   "-- ACTIVE": {
     "type": "separator",
     "title": "ACTIVE"

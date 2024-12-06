@@ -58,7 +58,7 @@ export default function Hero() {
               </div>
             </div>
             <p className="mt-12 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              The decentralized Layer-1 blockchain platform based on the Ethereum protocol uses leading behavioral value incentives (BVI) to ensure that every interaction of every user participating in Xone will create value, and every contribution will be rewarded.
+            In the ever-evolving landscape of blockchain technology, Xone Chain emerges as a modular Layer 1 solution that redefines how we perceive and interact with on-chain value. While many existing Layer 1 and Layer 2 solutions focus on scalability or efficiency, Xone emphasizes something deeper: building a blockchain where every on-chain action generates tangible, traceable value.
             </p>
             <div className="mt-16 flex items-center justify-center gap-x-6">
               <a

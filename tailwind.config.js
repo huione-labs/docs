@@ -49,7 +49,7 @@ module.exports = {
   plugins: [
     nextui(),
     iconsPlugin({
-      collections: getIconCollections(["tabler", "icon-park-outline", "material-symbols", "tabler", "icon-park-outline", "tdesign", "material-symbols", "octicon", "la", "carbon", "teenyicons", "solar", "game-icons", "lucide", "carbon", "gis", "ri", "material-symbols", "hugeicons", "fluent", "uil", "token", "mdi", "ph", "lineicons", "icon-park-outline", "material-symbols", "icon-park-outline"]),
+      collections: getIconCollections(["tabler", "streamline", "icon-park-outline", "tabler", "icon-park-outline", "tdesign", "octicon", "la", "carbon", "teenyicons", "solar", "game-icons", "lucide", "carbon", "gis", "ri", "hugeicons", "fluent", "uil", "token", "mdi", "ph", "lineicons", "icon-park-outline", "material-symbols", "icon-park-outline"]),
     }
     ),
   ],
