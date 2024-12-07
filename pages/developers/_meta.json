@@ -12,6 +12,8 @@
     "type": "separator",
     "title": "Developers"
   },
-  "tools": "DevTools",
-  "standard": "Standard"
+  "guide": "Getting Started",
+  "tools": "Developer Kit",
+  "standard": "Standard",
+  "display": "Display Tokens"
 }
