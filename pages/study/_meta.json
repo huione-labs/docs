@@ -17,6 +17,13 @@
     "title": "ACTIVE"
   },
   "donate": "Xone Donate",
+
+  "-- RESOURCE": {
+    "type": "separator",
+    "title": "RESOURCE"
+  },
+  "media": "Media Kit",
+  
   "-- TERMS & CONDITIONS": {
     "type": "separator",
     "title": "TERMS & CONDITIONS"
