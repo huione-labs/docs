@@ -8,6 +8,7 @@
   "testnet": "Testnet",
   "explorers": "Block Explorers",
   "faucets": "Faucets",
+  "architecture": "Architecture",
 
   "-- DEVELOPERS": {
     "type": "separator",

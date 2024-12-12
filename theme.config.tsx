@@ -18,14 +18,14 @@ const config: DocsThemeConfig = {
 
     <p>Xone Docs</p>
   </div>,
-  // banner: {
-  //   key: '2.0-release',
-  //   text: (
-  //     <a href="https://donate.xone.plus/en/home" target="_blank">
-  //       🎉 Together with us, let's drive the future of Xone Chain →
-  //     </a>
-  //   )
-  // },
+  banner: {
+    key: '2.0-release',
+    text: (
+      <a href="https://knight.center/" target="_blank">
+        🎉 Join us to illuminate the possibilities of the future with action. →
+      </a>
+    )
+  },
   sidebar: {
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
