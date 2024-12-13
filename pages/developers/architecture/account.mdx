@@ -1,28 +1,30 @@
 # Accounts
 
-Accounts are essential components in the XONE Chain, built on the same principles as Ethereum's account system. They serve as entities that hold balances, execute transactions, and interact with smart contracts.
+Accounts are essential components in the Xone Chain, built on the same principles as Ethereum's account system. They serve as entities that hold balances, execute transactions, and interact with smart contracts.
 
 ## 1. Overview of Accounts
 
-In the XONE, accounts are used to:
+In the Xone, accounts are used to:
 - Store XOC tokens and other on-chain assets.
 - Sign and send transactions.
 - Interact with smart contracts and other decentralized applications (DApps).
 
-Accounts in XONE follow the Ethereum Virtual Machine (EVM) model, ensuring compatibility with the broader Ethereum ecosystem.
+Accounts in Xone follow the Ethereum Virtual Machine (EVM) model, ensuring compatibility with the broader Ethereum ecosystem.
 
 ## 2. Account Types
 
 ### 2.1 Externally Owned Accounts (EOAs)
 
-- **Controlled By**: A private key held by the account owner.
-- **Purpose**:
-  - Initiates transactions such as token transfers or contract calls.
-  - Does not contain code or logic, serving only as a basic entity for holding funds.
-- **Key Characteristics**:
-  - Associated with a public-private key pair.
-  - Transactions must be signed using the private key.
-  - Requires gas for transactions initiated.
+**Controlled By:** A private key held by the account owner.
+
+**Purpose:**
+- Initiates transactions such as token transfers or contract calls.
+- Does not contain code or logic, serving only as a basic entity for holding funds.
+
+**Key Characteristics:**
+- Associated with a public-private key pair.
+- Transactions must be signed using the private key.
+- Requires gas for transactions initiated.
 
 ```json showLineNumbers copy filename="EOA Transfer Transaction.json"
 {
@@ -35,11 +37,11 @@ Accounts in XONE follow the Ethereum Virtual Machine (EVM) model, ensuring compa
 ```
 ### 2.2 Contract Accounts
 
-Controlled By: Smart contract logic deployed on the blockchain.
+**Controlled By:** Smart contract logic deployed on the blockchain.
 - Executes predefined logic when triggered by a transaction or internal message.
 - Used for applications like DeFi, NFTs, and DAOs.
 
-Key Characteristics:
+**Key Characteristics:**
 - Contains code and state.
 - Cannot independently initiate transactions; it only reacts to external inputs.
 - Executes logic defined in its bytecode.
@@ -57,7 +59,7 @@ Key Characteristics:
 
 ### 3.1 Address Format
 
-XONE accounts use the same Ethereum hexadecimal address format:
+Xone accounts use the same Ethereum hexadecimal address format:
 - 20-byte address represented as a hexadecimal string prefixed with 0x.
 
 ```json showLineNumbers copy filename="Example.json"
@@ -87,7 +89,7 @@ Signature: 0xSignature
 
 A nonce is a counter that ensures transactions are processed sequentially and prevents replay attacks.
 
-How It Works:
+**How It Works:**
 - Each transaction from an account must include a nonce.
 - The nonce starts at 0 and increments with each processed transaction.
 - If a transaction with an incorrect nonce is submitted, it is rejected.
@@ -100,7 +102,7 @@ Accounts requiring multiple signatures to authorize transactions.
 **Example:**3-of-5 Multisig: Three of the five key holders must sign for the transaction to be valid.
 
 ### 4.4 Contract-Based Account Logic
-Account Abstraction:
+**Account Abstraction:**
 
 - Smart contracts can be used to enhance account functionality, such as enabling account recovery or implementing dynamic fee structures.
 

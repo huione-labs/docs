@@ -1,3 +1,5 @@
 {
-  "account": "Account"
+  "account": "Account",
+  "transaction": "Transaction",
+  "replay": "Replay Protection"
 }
