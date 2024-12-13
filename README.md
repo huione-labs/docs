@@ -5,7 +5,6 @@ This repository serves as the source for all documentation related to Xone Chain
 ## Contents
 
 - **Introduction to Xone Chain**: An overview of the Xone Chain network, its core principles, and benefits. Learn about Xone Chain's high transaction throughput, security features, and scalable architecture.
-  
 - **User Guides**: Comprehensive guides for setting up and interacting with the Xone Chain network, including instructions for managing assets and performing transactions.
 
 - **Technical Specifications**: In-depth technical documentation for developers, covering the architecture, consensus mechanisms, and integration options for building decentralized applications (DApps) on Xone Chain.
@@ -30,7 +29,6 @@ We welcome community contributions to make our documentation as comprehensive an
 2. **Make Your Edits**: Update and enhance the documentation as needed.
 3. **Submit a Pull Request**: After making updates, submit a pull request to propose changes to the official repository. Our team will review and merge approved contributions.
 
-
 ## Contact
 
 For any questions or support related to Xone Chian, please reach out to our support team:
@@ -39,8 +37,6 @@ For any questions or support related to Xone Chian, please reach out to our supp
 
 **Business:** [business@xone.plus](mailto:business@xone.plus)
 
-**Community:** [Telegram](https://t.me/Xone\_Group) | [Twitter](https://x.com/xone\_chain)
+**Community:** [Telegram](https://t.me/Xone_Group) | [Twitter](https://x.com/xone_chain) | [Discord](https://discord.gg/TykpCEbY)
 
-**News:** [Medium](https://medium.com/@xone\_chain)
-
-
+**News:** [Medium](https://medium.com/@xone_chain)
