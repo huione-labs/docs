@@ -618,9 +618,12 @@ On the Xone Chain network, gas fees are a fundamental component supporting trans
 
 The gas calculations of Xone Chain consist of three components: Gas used, Base fee, and Priority fee. The specific calculation is as follows:
 
+<div className="overflow-x-auto">
 ```math
 GasFee=GasUsed*(BaseFee+PriorityFee)
 ```
+</div>
+
 <Callout type="info" emoji="ℹ️">
   **Minimum gas** unit price 0.01 Gwei\
   **Base Fee:** This dynamic fee is automatically adjusted by the network to reflect the current level of congestion on the blockchain. If demand within a block is high, the base fee will increase; if demand is low, the base fee will decrease. This adjustment mechanism ensures fair pricing and helps maintain network stability by managing congestion.\

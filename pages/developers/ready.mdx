@@ -20,12 +20,12 @@ This guide primarily introduces the basics or manuals for developers building on
     </CardBody>
     <CardFooter>
       <Link
-        isDisabled
+        isExternal
         showAnchorIcon
-        href="#"
+        href="/developers/architecture/account"
         className='text-primaryHue'
       >
-        Under Construction
+        Get Started
       </Link>
     </CardFooter>
   </Card>
@@ -58,12 +58,12 @@ This guide primarily introduces the basics or manuals for developers building on
     </CardBody>
     <CardFooter>
       <Link
-        isDisabled
+        isExternal
         showAnchorIcon
-        href="#"
+        href="/developers/standard/erc20"
         className='text-primaryHue'
       >
-        Under Construction
+        Creating the first contract
       </Link>
     </CardFooter>
   </Card>
@@ -77,12 +77,12 @@ This guide primarily introduces the basics or manuals for developers building on
     </CardBody>
     <CardFooter>
       <Link
-        isDisabled
+        isExternal
         showAnchorIcon
-        href="#"
+        href="/developers/tools"
         className='text-primaryHue'
       >
-        Under Construction
+        Select local development tools
       </Link>
     </CardFooter>
   </Card>
@@ -106,7 +106,11 @@ To ensure a smoother development experience, we recommend familiarizing yourself
     </TableRow>
     <TableRow key="2">
       <TableCell>**New RPC URL**</TableCell>
-      <TableCell>`https://rpc-testnet.xone.plus/`</TableCell>
+      <TableCell>
+      `https://rpc-testnet.xone.plus`\
+      `https://rpc-testnet.xone.org`\
+      `https://rpc-testnet.knight.center`
+      </TableCell>
     </TableRow>
     <TableRow key="3">
       <TableCell>**Chain ID**</TableCell>
@@ -116,9 +120,13 @@ To ensure a smoother development experience, we recommend familiarizing yourself
       <TableCell>**Symbol**</TableCell>
       <TableCell>XOC</TableCell>
     </TableRow>
-        <TableRow key="5">
+    <TableRow key="5">
       <TableCell>**Block Explorer URL**</TableCell>
       <TableCell>`https://testnet.xscscan.com/`</TableCell>
+    </TableRow>
+    <TableRow key="6">
+      <TableCell></TableCell>
+      <TableCell><Link className='text-primaryHue' isExternal showAnchorIcon href="https://chainlist.org/?testnets=true&search=Xone">Go to ChainList</Link></TableCell>
     </TableRow>
   </TableBody>
 </Table>
