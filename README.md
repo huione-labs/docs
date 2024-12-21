@@ -1,4 +1,4 @@
-# Embrace The Future Of Web3 Together
+![docs banner](./public/images/docs_banner.png)
 
 This repository serves as the source for all documentation related to Xone Chain, providing a complete resource for developers, contributors, and users who want to explore, understand, and build on Xone Chain. The documentation covers Xone Chain’s unique features, technical specifications, integration guides, and best practices for effective usage.
 
@@ -29,6 +29,8 @@ We welcome community contributions to make our documentation as comprehensive an
 2. **Make Your Edits**: Update and enhance the documentation as needed.
 3. **Submit a Pull Request**: After making updates, submit a pull request to propose changes to the official repository. Our team will review and merge approved contributions.
 
+For more information about contributing, please see our [contribution document](https://docs.xone.plus/study/contribut).
+
 ## Contact
 
 For any questions or support related to Xone Chian, please reach out to our support team:
@@ -37,6 +39,6 @@ For any questions or support related to Xone Chian, please reach out to our supp
 
 **Business:** [business@xone.plus](mailto:business@xone.plus)
 
-**Community:** [Telegram](https://t.me/Xone_Group) | [Twitter](https://x.com/xone_chain) | [Discord](https://discord.gg/TykpCEbY)
+**Community:** [Telegram](https://t.me/Xone_Group) | [Twitter](https://x.com/xone_chain) | [Discord](https://discord.gg/Du9y2GHV)
 
 **News:** [Medium](https://medium.com/@xone_chain)
