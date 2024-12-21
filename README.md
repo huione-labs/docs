@@ -1,4 +1,6 @@
-![docs banner](./public/images/docs_banner.png)
+<p align="center">
+  <img src="./public/images/docs_banner.png" alt="docs banner" width="400">
+</p>
 
 This repository serves as the source for all documentation related to Xone Chain, providing a complete resource for developers, contributors, and users who want to explore, understand, and build on Xone Chain. The documentation covers Xone Chain’s unique features, technical specifications, integration guides, and best practices for effective usage.
 
