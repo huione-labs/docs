@@ -31,15 +31,15 @@ We welcome community contributions to make our documentation as comprehensive an
 2. **Make Your Edits**: Update and enhance the documentation as needed.
 3. **Submit a Pull Request**: After making updates, submit a pull request to propose changes to the official repository. Our team will review and merge approved contributions.
 
-For more information about contributing, please see our [contribution document](https://docs.xone.plus/study/contribut).
+For more information about contributing, please see our [contribution document](https://docs.xone.org/study/contribut).
 
 ## Contact
 
 For any questions or support related to Xone Chian, please reach out to our support team:
 
-**Support:** [support@xone.plus](mailto:support@xone.plus)
+**Support:** [support@xone.org](mailto:support@xone.org)
 
-**Business:** [business@xone.plus](mailto:business@xone.plus)
+**Business:** [business@xone.org](mailto:business@xone.org)
 
 **Community:** [Telegram](https://t.me/Xone_Group) | [Twitter](https://x.com/xone_chain) | [Discord](https://discord.gg/Du9y2GHV)
 
