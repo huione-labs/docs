@@ -72,7 +72,7 @@ const config: DocsThemeConfig = {
     const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
     const url =
-      'https://xone.plus' +
+      'https://xone.org' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
 
     return (
