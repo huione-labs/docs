@@ -11,6 +11,11 @@ module.exports = withNextra({
     ignoreDuringBuilds: true
   },
   webpack(config) {
+
+    config.cache = {
+      type: 'memory'
+    };
+
     const allowedSvgRegex = /\.svg$/;
 
     const fileLoaderRule = config.module.rules.find(rule =>
