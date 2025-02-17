@@ -41,7 +41,7 @@ export default function Hero() {
                 }}
               >
                 <iframe
-                  src="https://www.youtube.com/embed/q-9wP6evODY"
+                  src="https://www.youtube.com/embed/h60iIJwvTt0"
                   title="Hello Xone"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
