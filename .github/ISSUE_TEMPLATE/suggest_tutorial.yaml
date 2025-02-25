@@ -1,12 +1,12 @@
 name: Suggest a tutorial
-description: Suggest a tutorial to our developers platform
+description: Suggest a tutorial to our developers platform.
 title: Suggest a tutorial
 labels: ["feature ✨", "content 🖋️"]
 body:
   - type: markdown
     attributes:
       value: |
-        We'll consider [our content resources policy](https://ethereum.org/en/contributing/content-resources/) when reviewing the tutorial, so please take a look there first.
+        ---
   - type: markdown
     id: tutorial_info
     attributes:
@@ -29,7 +29,7 @@ body:
     id: tutorial_tags
     attributes:
       label: Tutorial tags
-      description: What topics are covered in your tutorial? Check out the current tags on https://ethereum.org/en/developers/tutorials/ but feel free to add new ones
+      description: What topics are covered in your tutorial? you feel free to add new ones
     validations:
       required: true
   - type: dropdown
@@ -45,17 +45,17 @@ body:
   - type: dropdown
     id: tutorial_hosted
     attributes:
-      label: Hosted on ethereum.org or hosted elsewhere?
-      description: Let us know if you want your tutorial to be hosted on the ethereum.org website or if it is published elsewhere and you want us to link out to the tutorial
+      label: Hosted on xone.org or hosted elsewhere?
+      description: Let us know if you want your tutorial to be hosted on the xone.org website or if it is published elsewhere and you want us to link out to the tutorial
       options:
-        - "Hosted on ethereum.org"
+        - "Hosted on xone.org"
         - "Hosted elsewhere"
     validations:
       required: true
   - type: textarea
     id: tutorial_content
     attributes:
-      label: "For tutorials to be hosted on Ethereum.org: Tutorial Content"
+      label: "For tutorials to be hosted on xone.org: Tutorial Content"
       description: Please provide a detailed outline of the content for the tutorial
   - type: input
     id: tutorial_url
