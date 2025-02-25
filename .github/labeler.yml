@@ -1,17 +1,10 @@
 "documentation 📖":
   - README.md
-  - docs/**/*
-
-"tooling 🔧":
-  - .github/**/*
-  - src/scripts/**/*
-  - src/lib/**/*
-  - src/hooks/**/*
-  - .storybook/**/*
+  - pages/**/*
 
 "dependencies 📦":
   - package.json
-  - yarn.lock
+  - pnpm-lock.yaml
 
 "config ⚙️":
   - i18n.config.json
@@ -19,20 +12,13 @@
   - next-i18next.config,js
   - next-sitemap.config.js
   - tsconfig.json
-  - .nvmrc
-  - .eslintignore
-  - .eslintrc.json
-  - .prettierignore
-  - .prettierrc
-  - netlify.toml
-
-"translation 🌍":
-  - public/content/translations/**/*
-  - src/intl/**/*
+  - postcss.config.js
+  - .npmrc
+  - tailwind.config.js
+  - theme.config.tsx
+  - tsconfig.json
 
 "content 🖋️":
-  - src/intl/en/**
-  - public/content/**/*
-
-"event 📅":
-  - src/data/community-events.json
+  - src/**/*
+  - components/**/*
+  - public/**/*

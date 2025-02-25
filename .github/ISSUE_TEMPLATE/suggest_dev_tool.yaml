@@ -1,12 +1,12 @@
 name: Suggest a developer tool
-description: Anything a developer can use when building with Ethereum
+description: Anything a developer can use when building with Xone Chain.
 title: Suggest a developer tool
 labels: ["product 🧰"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://ethereum.org/en/contributing/adding-developer-tools/)
+        ---
   - type: markdown
     id: project_info
     attributes:
