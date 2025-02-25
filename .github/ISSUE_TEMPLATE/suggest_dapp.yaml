@@ -31,6 +31,22 @@ body:
       description: Please provide a URL to the DApp
     validations:
       required: true
+  - type: dropdown
+    id: DApp_type
+    attributes:
+      label: DApp Type
+      description: Please select the type of your DApp
+      options:
+        - "DeFi"
+        - "Games"
+        - "NFT"
+        - "AI"
+        - "Payment"
+        - "Data Processing"
+        - "Infrastructure And Tools"
+        - "Other"
+    validations:
+      required: true
   - type: textarea
     id: DApp_description
     attributes:
