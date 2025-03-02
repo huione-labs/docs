@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { DefaultSeo } from 'next-seo';
 import SEO from 'src/next-seo.config';
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -20,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <DefaultSeo {...SEO} />
       <NextUIProvider>
-        <Component {...pageProps} />
+          <Component {...pageProps} />
       </NextUIProvider>
     </>
   );

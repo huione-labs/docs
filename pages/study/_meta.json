@@ -11,12 +11,14 @@
   "modules": "Modules",
   "block":"Block",
   "transaction":"Transaction",
+  "epoch":"Epoch",
 
   "-- ACTIVE": {
     "type": "separator",
     "title": "ACTIVE"
   },
   "donate": "Xone Donate",
+  "release": "Coin Release",
 
   "-- RESOURCE": {
     "type": "separator",
