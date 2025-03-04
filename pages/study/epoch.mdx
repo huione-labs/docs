@@ -8,10 +8,10 @@ In Xone Chain, <Link className='text-primaryHue' isExternal showAnchorIcon href=
 ## Definition and rules of Epoch
 
 ### What is Epoch?
-**Block height interval:** Xone Chain's Epoch is divided by block height interval, and each Epoch contains 259,200 <Link className='text-primaryHue' showAnchorIcon href="/study/block">blocks</Link>.
+**Block height interval:** Xone Chain's Epoch is divided by block height interval, and each Epoch contains 172800 <Link className='text-primaryHue' showAnchorIcon href="/study/block">blocks</Link>.
 
 - Block generation time: ≈ 1 second/block
-- Natural time span: **about 3 days** (259,200 seconds ≈ 3 days)
+- Natural time span: **about 2 days** (172800 seconds ≈ 2 days)
 
 **Dynamic periodicity:** At the end of each Epoch, the network will automatically trigger the preset on-chain operations (such as reward settlement, validator rotation) and start a new cycle. This design makes the operation rhythm of Xone Chain clear and regular.
 
@@ -32,12 +32,12 @@ In Xone Chain, <Link className='text-primaryHue' isExternal showAnchorIcon href=
       </TableRow>
       <TableRow key="2">
         <TableCell>Epoch Block Number</TableCell>
-        <TableCell>259,200</TableCell>
+        <TableCell>172800</TableCell>
         <TableCell>Fixed block number, not affected by network delays or congestion.</TableCell>
       </TableRow>
       <TableRow key="3">
         <TableCell>Epoch Natural Time</TableCell>
-        <TableCell>~3 Day</TableCell>
+        <TableCell>~2 Day</TableCell>
         <TableCell>It is convenient for users to plan long-term participation behaviors such as staking and governance.</TableCell>
       </TableRow>
       <TableRow key="4">
@@ -73,9 +73,9 @@ Decentralized rotation mechanism: At the end of each Epoch, Xone Chain selects v
 
 **Checkpoint:** A chain status snapshot is generated at the end of each Epoch to facilitate fast synchronization of light <Link className='text-primaryHue' showAnchorIcon href="/study/nodes">node</Link> and verification of data integrity.
 
-## Why choose "3 days" as the Epoch cycle?
+## Why choose "～2 days" as the Epoch cycle?
 
-Xone Chain's 3-day Epoch design balances the following requirements:
+Xone Chain's 2-day Epoch design balances the following requirements:
 
 **Stability:** long enough to ensure full participation in on-chain operations (such as voting, staking).
 
@@ -116,7 +116,7 @@ To help understand the Epoch design of Xone Chain, the following is a comparison
       </TableRow>
       <TableRow key="4">
         <TableCell>Xone Chain</TableCell>
-        <TableCell>259,200 blocks (~3 D)</TableCell>
+        <TableCell>172800 blocks (~2 D)</TableCell>
         <TableCell>Rewards distribution, validator rotation, governance effectiveness</TableCell>
         <TableCell>Fixed block number, high throughput (~1 second/block)</TableCell>
       </TableRow>
@@ -146,9 +146,9 @@ When you stake tokens in the middle of an Epoch, the previous settlement will be
 
 <summary>Q3: Will the Epoch cycle change?</summary>
 
-The number of Epoch blocks (259,200) is fixed by the protocol, but the network can be modified through governance proposal voting (community consensus required).
+The number of Epoch blocks (172800) is fixed by the protocol, but the network can be modified through governance proposal voting (community consensus required).
 
 </details>
 
 
-The Epoch mechanism of Xone Chain is the core pillar of the network's autonomy and economic model, coordinating rewards, governance and security through a fixed cycle of 3 days. This design not only retains the trustless nature of the blockchain, but also provides users with a clear rhythm of participation. Whether it is a staker, a validator or a developer, they can rely on the Epoch cycle to efficiently plan on-chain activities.
+The Epoch mechanism of Xone Chain is the core pillar of the network's autonomy and economic model, coordinating rewards, governance and security through a fixed cycle of ～2 days. This design not only retains the trustless nature of the blockchain, but also provides users with a clear rhythm of participation. Whether it is a staker, a validator or a developer, they can rely on the Epoch cycle to efficiently plan on-chain activities.
