@@ -28,7 +28,7 @@ const ContactInfo = () => {
       </p>
       <p>
         <strong>Community:</strong>{" "}
-        <a href="https://t.me/Xone_Group" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:underline ml-1">
+        <a href="https://t.me/hello_xonechain" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:underline ml-1">
           Telegram
         </a>{" "}
         |{" "}
