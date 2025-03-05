@@ -1,7 +1,8 @@
 import { Steps, Callout } from 'nextra/components';
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Button} from "@nextui-org/react";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
 import ContactInfo from "@/components/ContactInfo";
+import Image from 'next/image';
 
 
 # Welcome to the XOC Release Page!
@@ -17,11 +18,15 @@ XOC is the native token of the Xone blockchain, while WXOC (Wrapped XOC) is a ma
 <Steps>
 ### Step 1: Access the Release Page.
 
-Visit the Xone XOC Release Page to start the process of releasing your XOC. <Link className='text-primaryHue' isExternal showAnchorIcon href="">Get started now</Link>
+Visit the Xone XOC Release Page to start the process of releasing your XOC. <Link className='text-primaryHue' isExternal showAnchorIcon href="https://xone.org/release">Get started now</Link>
+
+<Image src="/images/Release_Banner.png" alt="Release_Banner" width={1200} height={800} layout="responsive" />
 
 ### Step 2: Connect Your Wallet and Check.
 
 Connect your wallet that holds WXOC tokens to our release page. Before proceeding, ensure that your connected wallet contains WXOC tokens available for interaction and sufficient gas fees.
+
+<Image src="/images/Release_Connect_Wallet.png" alt="Release_Connect_Wallet" width={1200} height={800} layout="responsive" />
 
 <Button
   href="https://faucet.xone.org/"
@@ -38,10 +43,12 @@ Connect your wallet that holds WXOC tokens to our release page. Before proceedin
 
 Once the previous steps are confirmed, enter the amount of XOC you want to release and confirm the transaction. Your wallet will prompt a transaction confirmation request—please verify the contract address and transaction details before proceeding.
 
+<Image src="/images/Release_Send_WXOC.png" alt="Release_Send_WXOC" width={1200} height={800} layout="responsive" />
+
 <Callout type="warning" emoji="⚠️">
   **Note:**  
   1. The exchange ratio of WXOC to XOC is **1:1**, with no additional fees or management charges.  
-  2. The amount of XOC you receive depends on the amount of WXOC you confirm for release. <Link className='text-primaryHue' showAnchorIcon href="">Check the calculation details here >></Link>
+  2. The amount of XOC you receive depends on the amount of WXOC you confirm for release. <Link className='text-primaryHue' showAnchorIcon href="/study/release#how-do-i-calculate-the-tokens-i-can-release">Check the calculation details here >></Link>
   3. Once your WXOC tokens are sent and confirmed on the contract, they **cannot be retrieved**, whether sent from this page or through other methods.
 </Callout>
 
