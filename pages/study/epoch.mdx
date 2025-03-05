@@ -1,0 +1,154 @@
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button} from "@nextui-org/react";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+
+# What is Xone Epoch
+
+In Xone Chain, <Link className='text-primaryHue' isExternal showAnchorIcon href="https://en.wikipedia.org/wiki/Epoch_(computing)">Epoch</Link> is a core time cycle management module used to coordinate key operations in the network (such as reward distribution, validator rotation, protocol upgrades, etc.). Epoch is designed to ensure the stability, fairness and efficiency of the network while providing a predictable rule framework for users and participants.
+
+## Definition and rules of Epoch
+
+### What is Epoch?
+**Block height interval:** Xone Chain's Epoch is divided by block height interval, and each Epoch contains 172800 <Link className='text-primaryHue' showAnchorIcon href="/study/block">blocks</Link>.
+
+- Block generation time: ≈ 1 second/block
+- Natural time span: **about 2 days** (172800 seconds ≈ 2 days)
+
+**Dynamic periodicity:** At the end of each Epoch, the network will automatically trigger the preset on-chain operations (such as reward settlement, validator rotation) and start a new cycle. This design makes the operation rhythm of Xone Chain clear and regular.
+
+## Core rules of Epoch
+
+<div className="overflow-x-auto">
+  <Table key={new Date().getTime()} removeWrapper aria-label="XOC Fundraising Table" className="mt-2">
+    <TableHeader>
+      <TableColumn key="parameter">Parameter</TableColumn>
+      <TableColumn key="value">Value</TableColumn>
+      <TableColumn key="explain">Explain</TableColumn>
+    </TableHeader>
+    <TableBody>
+      <TableRow key="1">
+        <TableCell>Block time</TableCell>
+        <TableCell>~1 s</TableCell>
+        <TableCell>The average time for each block generation ensures high throughput.</TableCell>
+      </TableRow>
+      <TableRow key="2">
+        <TableCell>Epoch Block Number</TableCell>
+        <TableCell>172800</TableCell>
+        <TableCell>Fixed block number, not affected by network delays or congestion.</TableCell>
+      </TableRow>
+      <TableRow key="3">
+        <TableCell>Epoch Natural Time</TableCell>
+        <TableCell>~2 Day</TableCell>
+        <TableCell>It is convenient for users to plan long-term participation behaviors such as staking and governance.</TableCell>
+      </TableRow>
+      <TableRow key="4">
+        <TableCell>Triggering Events</TableCell>
+        <TableCell>Epoch Boundary</TableCell>
+        <TableCell>On-chain operations (such as reward distribution) are automatically performed at the end of each Epoch.</TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>
+
+## Core functions of Epoch
+
+### Reward distribution and staking economy
+
+**Periodic reward settlement:** Staking rewards, transaction fee sharing, etc. of all network participants are settled and distributed uniformly at the end of each Epoch. Example: If you stake tokens in `Epoch #100`, the rewards will be credited to your account at the end of `Epoch #100`; you can also understand it as settlement at the beginning of `Epoch #101`.
+
+**Transparent and verifiable:** Users can track Epoch progress and expected returns in real time through block browsers.
+
+### Validator (Nodes) rotation
+
+Decentralized rotation mechanism: At the end of each Epoch, Xone Chain selects validators for the next cycle based on staking weights and random algorithms to prevent power concentration.
+
+**Fairness:** New validators need to wait for the Epoch switch to take effect.
+
+**Security:** Frequent rotation reduces the risk of long-term attacks.
+
+### Protocol governance and upgrades
+
+**On-chain governance window:** Major protocol upgrades or parameter adjustment proposals (such as handling fee rates, inflation models) must be voted on within a full Epoch cycle and take effect in the next Epoch. Example: If the proposal is passed in `Epoch #101`, execution will start from `Epoch #102`.
+
+### Network status snapshot
+
+**Checkpoint:** A chain status snapshot is generated at the end of each Epoch to facilitate fast synchronization of light <Link className='text-primaryHue' showAnchorIcon href="/study/nodes">node</Link> and verification of data integrity.
+
+## Why choose "～2 days" as the Epoch cycle?
+
+Xone Chain's 2-day Epoch design balances the following requirements:
+
+**Stability:** long enough to ensure full participation in on-chain operations (such as voting, staking).
+
+**Flexibility:** regular updates to avoid long-term solidification of validators or parameters.
+
+**User experience:** aligned with natural time (weeks, months), easy for users to remember and plan.
+
+## Comparison with Epochs of other blockchains
+
+To help understand the Epoch design of Xone Chain, the following is a comparison of similar mechanisms of mainstream public chains:
+
+<div className="overflow-x-auto">
+  <Table key={new Date().getTime()} removeWrapper aria-label="XOC Fundraising Table" className="mt-2" defaultSelectedKeys={["4"]} selectionMode="single">
+    <TableHeader>
+      <TableColumn key="chain">Chain</TableColumn>
+      <TableColumn key="epoch">Epoch</TableColumn>
+      <TableColumn key="purpose">Core Purpose</TableColumn>
+      <TableColumn key="features">Design Features</TableColumn>
+    </TableHeader>
+    <TableBody>
+      <TableRow key="1">
+        <TableCell>Solana</TableCell>
+        <TableCell>~2-3 D (dynamic adjustment)</TableCell>
+        <TableCell>Inflation reward distribution, validator weight update</TableCell>
+        <TableCell>Dynamic periodic adaptation to network performance changes</TableCell>
+      </TableRow>
+      <TableRow key="2">
+        <TableCell>Ethereum 2.0</TableCell>
+        <TableCell>32 blocks (~6.4 Minutes)</TableCell>
+        <TableCell>Validator Committee Rotation, Finality Confirmation</TableCell>
+        <TableCell>High-frequency coordination of short-term adaptation to PoS consensus</TableCell>
+      </TableRow>
+      <TableRow key="3">
+        <TableCell>Cardano</TableCell>
+        <TableCell>432,000 blocks (~5 D)</TableCell>
+        <TableCell>Staking Rewards Distribution, Slot Leader Election</TableCell>
+        <TableCell>Natural time alignment, emphasizing the pledge economic cycle</TableCell>
+      </TableRow>
+      <TableRow key="4">
+        <TableCell>Xone Chain</TableCell>
+        <TableCell>172800 blocks (~2 D)</TableCell>
+        <TableCell>Rewards distribution, validator rotation, governance effectiveness</TableCell>
+        <TableCell>Fixed block number, high throughput (~1 second/block)</TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</div>
+
+## FAQ
+
+<details>
+
+<summary>Q1: How can I check the progress of the current Epoch?</summary>
+
+Through the Xone block browser, enter the block height to query the number of remaining blocks and the estimated end time of the current Epoch. <Link className='text-primaryHue' isDisabled showAnchorIcon href="https://xscscan.com/contract-verification">you can also access it directly here</Link>.
+
+</details>
+
+<details>
+
+<summary>Q2: If I stake tokens in the middle of an Epoch, when will I get the reward?</summary>
+
+When you stake tokens in the middle of an Epoch, the previous settlement will be made when the next Epoch is settled.
+
+</details>
+
+<details>
+
+<summary>Q3: Will the Epoch cycle change?</summary>
+
+The number of Epoch blocks (172800) is fixed by the protocol, but the network can be modified through governance proposal voting (community consensus required).
+
+</details>
+
+
+The Epoch mechanism of Xone Chain is the core pillar of the network's autonomy and economic model, coordinating rewards, governance and security through a fixed cycle of ～2 days. This design not only retains the trustless nature of the blockchain, but also provides users with a clear rhythm of participation. Whether it is a staker, a validator or a developer, they can rely on the Epoch cycle to efficiently plan on-chain activities.

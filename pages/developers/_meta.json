@@ -16,6 +16,7 @@
   },
   "guide": "Getting Started",
   "tools": "Developer Kit",
+  "json": "Json RPC",
   "standard": "Standard",
   "display": "Display Tokens"
 }
